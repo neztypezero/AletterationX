@@ -1,0 +1,1240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		632CE1DE18B9B46800A84C8A /* NezAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 632CE1D518B9B46800A84C8A /* NezAnimation.m */; };
+		632CE1DF18B9B46800A84C8A /* NezAnimationEasingFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = 632CE1D618B9B46800A84C8A /* NezAnimationEasingFunction.c */; };
+		632CE1E218B9B46800A84C8A /* NezAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 632CE1DD18B9B46800A84C8A /* NezAnimator.m */; };
+		633065EF18E9FC2F00F21FE6 /* NezVboVertexP4T2.m in Sources */ = {isa = PBXBuildFile; fileRef = 633065EE18E9FC2F00F21FE6 /* NezVboVertexP4T2.m */; };
+		633065F218EA469400F21FE6 /* NezGBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 633065F118EA469400F21FE6 /* NezGBuffer.m */; };
+		6334343518C9000C004B0E02 /* NezAletterationBigBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 6334343418C9000C004B0E02 /* NezAletterationBigBox.m */; };
+		6334344B18C90AD1004B0E02 /* NezPath2d.m in Sources */ = {isa = PBXBuildFile; fileRef = 6334344418C90AD1004B0E02 /* NezPath2d.m */; };
+		6334344C18C90AD1004B0E02 /* NezPath3d.m in Sources */ = {isa = PBXBuildFile; fileRef = 6334344618C90AD1004B0E02 /* NezPath3d.m */; };
+		6334344D18C90AD1004B0E02 /* NezPathCubicBezier2d.m in Sources */ = {isa = PBXBuildFile; fileRef = 6334344818C90AD1004B0E02 /* NezPathCubicBezier2d.m */; };
+		6334344E18C90AD1004B0E02 /* NezPathCubicBezier3d.m in Sources */ = {isa = PBXBuildFile; fileRef = 6334344A18C90AD1004B0E02 /* NezPathCubicBezier3d.m */; };
+		6337380018C29537001E584B /* NezGLKUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 633737FE18C29537001E584B /* NezGLKUtil.c */; };
+		633C90DD18AAC1C50040AC89 /* NezAletterationBulletPhysics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 633C90DA18AAC1C50040AC89 /* NezAletterationBulletPhysics.mm */; };
+		633C90DE18AAC1C50040AC89 /* NezDynamicNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 633C90DC18AAC1C50040AC89 /* NezDynamicNode.mm */; };
+		6346D82E18A95B1500C392EA /* NezSurfaceColorMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6346D82D18A95B1500C392EA /* NezSurfaceColorMaterial.m */; };
+		6346D83C18A98DAD00C392EA /* NezModelVertexArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6346D83B18A98DAD00C392EA /* NezModelVertexArray.m */; };
+		6346D84F18A9F1B600C392EA /* NezAletterationSCNView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6346D84E18A9F1B600C392EA /* NezAletterationSCNView.m */; };
+		634875BC18D3B3AB00B27183 /* Databases in Resources */ = {isa = PBXBuildFile; fileRef = 634875BB18D3B3AB00B27183 /* Databases */; };
+		634E7D4318A810A6004A665F /* NezAletterationGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 634E7D4218A810A6004A665F /* NezAletterationGraphics.m */; };
+		634E7D4718A82323004A665F /* NezAletterationGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634E7D4618A82323004A665F /* NezAletterationGameController.m */; };
+		6350B33A18CF758200B446FF /* NezAletterationGameTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350B33918CF758200B446FF /* NezAletterationGameTable.m */; };
+		63570CC218E61E1E008AE95D /* NezVertexBufferObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63570CBE18E61E1E008AE95D /* NezVertexBufferObject.m */; };
+		63570CC618E61E5B008AE95D /* NezVertexArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63570CC518E61E5B008AE95D /* NezVertexArrayObject.m */; };
+		63570CC918E62332008AE95D /* NezVertex2VBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 63570CC818E62332008AE95D /* NezVertex2VBO.m */; };
+		63570CCD18E63A0B008AE95D /* NezFogVAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 63570CCC18E63A0B008AE95D /* NezFogVAO.m */; };
+		635B5AFF18D0D65B006124C2 /* NezAletterationPlayerAI.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B5AFE18D0D65B006124C2 /* NezAletterationPlayerAI.m */; };
+		635B5B0418D0E44D006124C2 /* NezCIFilterGlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B5B0318D0E44D006124C2 /* NezCIFilterGlow.m */; };
+		63698C7A18DCFA1900412877 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63698C7918DCFA1900412877 /* libxml2.dylib */; };
+		6374666518E88FBF00A9BED5 /* NezGLSLProgramFXAA.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374666418E88FBF00A9BED5 /* NezGLSLProgramFXAA.m */; };
+		6374666818E8904B00A9BED5 /* NezFXAAVAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374666718E8904B00A9BED5 /* NezFXAAVAO.m */; };
+		6375937A18DA2416002E0B40 /* NezNodeFireworksEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6375937718DA2416002E0B40 /* NezNodeFireworksEmitter.m */; };
+		6375937B18DA2416002E0B40 /* NezNodeParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6375937918DA2416002E0B40 /* NezNodeParticleEmitter.m */; };
+		6375937E18DAB72F002E0B40 /* NezNodeStarStreamerEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6375937D18DAB72F002E0B40 /* NezNodeStarStreamerEmitter.m */; };
+		6386705918A574F800D52133 /* ShaderModifiers in Resources */ = {isa = PBXBuildFile; fileRef = 6386705818A574F800D52133 /* ShaderModifiers */; };
+		6386B81718AC089000E262F7 /* NezAletterationInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6386B81618AC089000E262F7 /* NezAletterationInputController.m */; };
+		638ABB3C18F4B29C00010D26 /* BulletCollision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638ABB3918F4B29C00010D26 /* BulletCollision.framework */; };
+		638ABB3D18F4B29C00010D26 /* BulletDynamics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638ABB3A18F4B29C00010D26 /* BulletDynamics.framework */; };
+		638ABB3E18F4B29C00010D26 /* LinearMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638ABB3B18F4B29C00010D26 /* LinearMath.framework */; };
+		6399C26318D78A0600A271C9 /* NezGLSLCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6399C26018D78A0600A271C9 /* NezGLSLCompiler.m */; };
+		6399C26418D78A0600A271C9 /* NezGLSLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 6399C26218D78A0600A271C9 /* NezGLSLProgram.m */; };
+		6399C26618D78DF200A271C9 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 6399C26518D78DF200A271C9 /* Shaders */; };
+		6399C26A18D79D3400A271C9 /* NezGLSLProgramParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6399C26918D79D3400A271C9 /* NezGLSLProgramParticleSystem.m */; };
+		639D3F6B18DF881C00E4CD42 /* NezClickableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 639D3F6A18DF881C00E4CD42 /* NezClickableNode.m */; };
+		639D3F6F18DFA58700E4CD42 /* NezXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 639D3F6E18DFA58700E4CD42 /* NezXML.m */; };
+		639D3F7218DFA59700E4CD42 /* NezXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 639D3F7118DFA59700E4CD42 /* NezXMLElement.m */; };
+		639D3F7518E2364200E4CD42 /* NezAletterationDefinitionBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 639D3F7418E2364200E4CD42 /* NezAletterationDefinitionBubble.m */; };
+		63A1F06618B1912A00F6A070 /* NezBoxLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1F06518B1912A00F6A070 /* NezBoxLoader.m */; };
+		63ACB36318D4174900088541 /* NezAletterationPlayerNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ACB36218D4174900088541 /* NezAletterationPlayerNotifications.m */; };
+		63D3368A18E5341D00FEC7F8 /* NezGLSLProgramFog.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D3368918E5341D00FEC7F8 /* NezGLSLProgramFog.m */; };
+		63DF17C618A6D08500DD3805 /* NezNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17C518A6D08500DD3805 /* NezNode.m */; };
+		63DF17C818A6D2EF00DD3805 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DF17C718A6D2EF00DD3805 /* libsqlite3.dylib */; };
+		63DF181118A6D31F00DD3805 /* NezAletterationBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17CC18A6D31F00DD3805 /* NezAletterationBox.mm */; };
+		63DF182118A6D31F00DD3805 /* NezAletterationGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17EF18A6D31F00DD3805 /* NezAletterationGameState.m */; };
+		63DF182218A6D31F00DD3805 /* NezAletterationGameStateLineState.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17F118A6D31F00DD3805 /* NezAletterationGameStateLineState.m */; };
+		63DF182318A6D31F00DD3805 /* NezAletterationGameStateLineStateStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17F318A6D31F00DD3805 /* NezAletterationGameStateLineStateStack.m */; };
+		63DF182418A6D31F00DD3805 /* NezAletterationGameStateRetiredWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17F518A6D31F00DD3805 /* NezAletterationGameStateRetiredWord.m */; };
+		63DF182518A6D31F00DD3805 /* NezAletterationGameStateTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17F718A6D31F00DD3805 /* NezAletterationGameStateTurn.m */; };
+		63DF182818A6D31F00DD3805 /* NezAletterationPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17FD18A6D31F00DD3805 /* NezAletterationPlayer.m */; };
+		63DF182918A6D31F00DD3805 /* NezAletterationPlayerPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF17FF18A6D31F00DD3805 /* NezAletterationPlayerPrefs.m */; };
+		63DF182A18A6D31F00DD3805 /* NezAletterationSQLiteDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF180218A6D31F00DD3805 /* NezAletterationSQLiteDictionary.m */; };
+		63DF182B18A6D31F00DD3805 /* NezSQLite.c in Sources */ = {isa = PBXBuildFile; fileRef = 63DF180318A6D31F00DD3805 /* NezSQLite.c */; };
+		63DF182C18A6D31F00DD3805 /* NezSQLiteHighScores.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF180618A6D31F00DD3805 /* NezSQLiteHighScores.m */; };
+		63DF182D18A6D31F00DD3805 /* NezAletterationStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF180918A6D31F00DD3805 /* NezAletterationStoreKit.m */; };
+		63DF182F18A6D31F00DD3805 /* NezGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF181018A6D31F00DD3805 /* NezGCD.m */; };
+		63DF183A18A6DA3400DD3805 /* NezStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF183718A6DA3400DD3805 /* NezStoreKit.m */; };
+		63DF183B18A6DA3400DD3805 /* NezStoreKitProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF183918A6DA3400DD3805 /* NezStoreKitProduct.m */; };
+		63DF183D18A6DA4800DD3805 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DF183C18A6DA4800DD3805 /* StoreKit.framework */; };
+		63DF184118A6DA6700DD3805 /* NezRandom.c in Sources */ = {isa = PBXBuildFile; fileRef = 63DF183F18A6DA6700DD3805 /* NezRandom.c */; };
+		63DF184918A6E8CD00DD3805 /* NezAletterationGameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF184818A6E8CD00DD3805 /* NezAletterationGameBoard.m */; };
+		63DF184D18A6EA9400DD3805 /* NezAletterationLetterBlock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63DF184C18A6EA9400DD3805 /* NezAletterationLetterBlock.mm */; };
+		63DF185018A6ECC300DD3805 /* NezAletterationRetiredWordBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF184F18A6ECC300DD3805 /* NezAletterationRetiredWordBoard.m */; };
+		63DF185318A6EE2600DD3805 /* NezAletterationRetiredWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF185218A6EE2600DD3805 /* NezAletterationRetiredWord.m */; };
+		63DF185618A6EE6100DD3805 /* NezAletterationWordLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF185518A6EE6100DD3805 /* NezAletterationWordLine.m */; };
+		63DF185918A6F1D600DD3805 /* NezAletterationLetterStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF185818A6F1D600DD3805 /* NezAletterationLetterStack.m */; };
+		63E9DF0218A2E4A70019CA40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9DF0118A2E4A70019CA40 /* Cocoa.framework */; };
+		63E9DF0C18A2E4A70019CA40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63E9DF0A18A2E4A70019CA40 /* InfoPlist.strings */; };
+		63E9DF0E18A2E4A70019CA40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E9DF0D18A2E4A70019CA40 /* main.m */; };
+		63E9DF1218A2E4A70019CA40 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 63E9DF1018A2E4A70019CA40 /* Credits.rtf */; };
+		63E9DF1818A2E4A70019CA40 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E9DF1618A2E4A70019CA40 /* MainMenu.xib */; };
+		63E9DF1A18A2E4A70019CA40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E9DF1918A2E4A70019CA40 /* Images.xcassets */; };
+		63E9DF2118A2E4A70019CA40 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9DF2018A2E4A70019CA40 /* XCTest.framework */; };
+		63E9DF2218A2E4A70019CA40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9DF0118A2E4A70019CA40 /* Cocoa.framework */; };
+		63E9DF2A18A2E4A70019CA40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63E9DF2818A2E4A70019CA40 /* InfoPlist.strings */; };
+		63E9DF2C18A2E4A70019CA40 /* AletterationXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E9DF2B18A2E4A70019CA40 /* AletterationXTests.m */; };
+		63E9DF3618A2E4D10019CA40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9DF3518A2E4D10019CA40 /* QuartzCore.framework */; };
+		63E9DF3818A2E4EB0019CA40 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9DF3718A2E4EB0019CA40 /* OpenGL.framework */; };
+		63E9DF3A18A2E4F40019CA40 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9DF3918A2E4F40019CA40 /* SceneKit.framework */; };
+		63E9DF4418A2E7730019CA40 /* NezSimpleObjLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E9DF4018A2E7730019CA40 /* NezSimpleObjLoader.m */; };
+		63E9DF4518A2E7730019CA40 /* NezAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E9DF4218A2E7730019CA40 /* NezAppDelegate.m */; };
+		63E9DF4A18A2E8C40019CA40 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9DF4918A2E8C40019CA40 /* GLKit.framework */; };
+		63E9DF4D18A2EA910019CA40 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 63E9DF4C18A2EA910019CA40 /* Models */; };
+		63E9DF4F18A2F4700019CA40 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 63E9DF4E18A2F4700019CA40 /* Textures */; };
+		63EC5A8818E6658C004F8476 /* NezParticleSystemVAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EC5A8718E6658C004F8476 /* NezParticleSystemVAO.m */; };
+		63EC5A8B18E666B5004F8476 /* NezVertexParticleVBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EC5A8A18E666B5004F8476 /* NezVertexParticleVBO.m */; };
+		63FC4A6E18DDFCFC007AB5E2 /* NezAletterationDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FC4A6D18DDFCFC007AB5E2 /* NezAletterationDefinition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63E9DF2318A2E4A70019CA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E9DEF618A2E4A70019CA40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E9DEFD18A2E4A70019CA40;
+			remoteInfo = AletterationX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		632CE1D418B9B46800A84C8A /* NezAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAnimation.h; sourceTree = "<group>"; };
+		632CE1D518B9B46800A84C8A /* NezAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAnimation.m; sourceTree = "<group>"; };
+		632CE1D618B9B46800A84C8A /* NezAnimationEasingFunction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NezAnimationEasingFunction.c; sourceTree = "<group>"; };
+		632CE1D718B9B46800A84C8A /* NezAnimationEasingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAnimationEasingFunction.h; sourceTree = "<group>"; };
+		632CE1DC18B9B46800A84C8A /* NezAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAnimator.h; sourceTree = "<group>"; };
+		632CE1DD18B9B46800A84C8A /* NezAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAnimator.m; sourceTree = "<group>"; };
+		633065ED18E9FC2F00F21FE6 /* NezVboVertexP4T2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezVboVertexP4T2.h; sourceTree = "<group>"; };
+		633065EE18E9FC2F00F21FE6 /* NezVboVertexP4T2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezVboVertexP4T2.m; sourceTree = "<group>"; };
+		633065F018EA469400F21FE6 /* NezGBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezGBuffer.h; sourceTree = "<group>"; };
+		633065F118EA469400F21FE6 /* NezGBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezGBuffer.m; sourceTree = "<group>"; };
+		6334343318C9000C004B0E02 /* NezAletterationBigBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationBigBox.h; sourceTree = "<group>"; };
+		6334343418C9000C004B0E02 /* NezAletterationBigBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationBigBox.m; sourceTree = "<group>"; };
+		6334344318C90AD1004B0E02 /* NezPath2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezPath2d.h; sourceTree = "<group>"; };
+		6334344418C90AD1004B0E02 /* NezPath2d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezPath2d.m; sourceTree = "<group>"; };
+		6334344518C90AD1004B0E02 /* NezPath3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezPath3d.h; sourceTree = "<group>"; };
+		6334344618C90AD1004B0E02 /* NezPath3d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezPath3d.m; sourceTree = "<group>"; };
+		6334344718C90AD1004B0E02 /* NezPathCubicBezier2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezPathCubicBezier2d.h; sourceTree = "<group>"; };
+		6334344818C90AD1004B0E02 /* NezPathCubicBezier2d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezPathCubicBezier2d.m; sourceTree = "<group>"; };
+		6334344918C90AD1004B0E02 /* NezPathCubicBezier3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezPathCubicBezier3d.h; sourceTree = "<group>"; };
+		6334344A18C90AD1004B0E02 /* NezPathCubicBezier3d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezPathCubicBezier3d.m; sourceTree = "<group>"; };
+		6334344F18C90AEE004B0E02 /* NezPaths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NezPaths.h; sourceTree = "<group>"; };
+		633737FE18C29537001E584B /* NezGLKUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NezGLKUtil.c; sourceTree = "<group>"; };
+		633737FF18C29537001E584B /* NezGLKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezGLKUtil.h; sourceTree = "<group>"; };
+		633C90D918AAC1C50040AC89 /* NezAletterationBulletPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationBulletPhysics.h; sourceTree = "<group>"; };
+		633C90DA18AAC1C50040AC89 /* NezAletterationBulletPhysics.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NezAletterationBulletPhysics.mm; sourceTree = "<group>"; };
+		633C90DB18AAC1C50040AC89 /* NezDynamicNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezDynamicNode.h; sourceTree = "<group>"; };
+		633C90DC18AAC1C50040AC89 /* NezDynamicNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NezDynamicNode.mm; sourceTree = "<group>"; };
+		6346D82C18A95B1500C392EA /* NezSurfaceColorMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezSurfaceColorMaterial.h; sourceTree = "<group>"; };
+		6346D82D18A95B1500C392EA /* NezSurfaceColorMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezSurfaceColorMaterial.m; sourceTree = "<group>"; };
+		6346D82F18A95CC400C392EA /* NezSCNMaterials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NezSCNMaterials.h; sourceTree = "<group>"; };
+		6346D83A18A98DAD00C392EA /* NezModelVertexArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezModelVertexArray.h; sourceTree = "<group>"; };
+		6346D83B18A98DAD00C392EA /* NezModelVertexArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezModelVertexArray.m; sourceTree = "<group>"; };
+		6346D84D18A9F1B600C392EA /* NezAletterationSCNView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationSCNView.h; sourceTree = "<group>"; };
+		6346D84E18A9F1B600C392EA /* NezAletterationSCNView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationSCNView.m; sourceTree = "<group>"; };
+		634875BB18D3B3AB00B27183 /* Databases */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Databases; path = Resources/Databases; sourceTree = "<group>"; };
+		634E7D4118A810A6004A665F /* NezAletterationGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGraphics.h; sourceTree = "<group>"; };
+		634E7D4218A810A6004A665F /* NezAletterationGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGraphics.m; sourceTree = "<group>"; };
+		634E7D4518A82323004A665F /* NezAletterationGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGameController.h; sourceTree = "<group>"; };
+		634E7D4618A82323004A665F /* NezAletterationGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGameController.m; sourceTree = "<group>"; };
+		6350B33818CF758200B446FF /* NezAletterationGameTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGameTable.h; sourceTree = "<group>"; };
+		6350B33918CF758200B446FF /* NezAletterationGameTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGameTable.m; sourceTree = "<group>"; };
+		63570CBD18E61E1E008AE95D /* NezVertexBufferObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezVertexBufferObject.h; sourceTree = "<group>"; };
+		63570CBE18E61E1E008AE95D /* NezVertexBufferObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezVertexBufferObject.m; sourceTree = "<group>"; };
+		63570CBF18E61E1E008AE95D /* NezVertexTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezVertexTypes.h; sourceTree = "<group>"; };
+		63570CC418E61E5B008AE95D /* NezVertexArrayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezVertexArrayObject.h; sourceTree = "<group>"; };
+		63570CC518E61E5B008AE95D /* NezVertexArrayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezVertexArrayObject.m; sourceTree = "<group>"; };
+		63570CC718E62332008AE95D /* NezVertex2VBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezVertex2VBO.h; sourceTree = "<group>"; };
+		63570CC818E62332008AE95D /* NezVertex2VBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezVertex2VBO.m; sourceTree = "<group>"; };
+		63570CCA18E62D33008AE95D /* NezGLSLProgramProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NezGLSLProgramProtocols.h; sourceTree = "<group>"; };
+		63570CCB18E63A0B008AE95D /* NezFogVAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezFogVAO.h; sourceTree = "<group>"; };
+		63570CCC18E63A0B008AE95D /* NezFogVAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezFogVAO.m; sourceTree = "<group>"; };
+		635B5AFD18D0D65B006124C2 /* NezAletterationPlayerAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationPlayerAI.h; sourceTree = "<group>"; };
+		635B5AFE18D0D65B006124C2 /* NezAletterationPlayerAI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationPlayerAI.m; sourceTree = "<group>"; };
+		635B5B0218D0E44D006124C2 /* NezCIFilterGlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezCIFilterGlow.h; sourceTree = "<group>"; };
+		635B5B0318D0E44D006124C2 /* NezCIFilterGlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezCIFilterGlow.m; sourceTree = "<group>"; };
+		63698C7918DCFA1900412877 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		6374666318E88FBF00A9BED5 /* NezGLSLProgramFXAA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezGLSLProgramFXAA.h; sourceTree = "<group>"; };
+		6374666418E88FBF00A9BED5 /* NezGLSLProgramFXAA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezGLSLProgramFXAA.m; sourceTree = "<group>"; };
+		6374666618E8904B00A9BED5 /* NezFXAAVAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezFXAAVAO.h; sourceTree = "<group>"; };
+		6374666718E8904B00A9BED5 /* NezFXAAVAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezFXAAVAO.m; sourceTree = "<group>"; };
+		6375937618DA2416002E0B40 /* NezNodeFireworksEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezNodeFireworksEmitter.h; sourceTree = "<group>"; };
+		6375937718DA2416002E0B40 /* NezNodeFireworksEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezNodeFireworksEmitter.m; sourceTree = "<group>"; };
+		6375937818DA2416002E0B40 /* NezNodeParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezNodeParticleEmitter.h; sourceTree = "<group>"; };
+		6375937918DA2416002E0B40 /* NezNodeParticleEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezNodeParticleEmitter.m; sourceTree = "<group>"; };
+		6375937C18DAB72F002E0B40 /* NezNodeStarStreamerEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezNodeStarStreamerEmitter.h; sourceTree = "<group>"; };
+		6375937D18DAB72F002E0B40 /* NezNodeStarStreamerEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezNodeStarStreamerEmitter.m; sourceTree = "<group>"; };
+		6386705818A574F800D52133 /* ShaderModifiers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ShaderModifiers; path = Resources/ShaderModifiers; sourceTree = "<group>"; };
+		6386B81418AC07B000E262F7 /* NezAletterationInputControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NezAletterationInputControllers.h; sourceTree = "<group>"; };
+		6386B81518AC089000E262F7 /* NezAletterationInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationInputController.h; sourceTree = "<group>"; };
+		6386B81618AC089000E262F7 /* NezAletterationInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationInputController.m; sourceTree = "<group>"; };
+		638ABB3918F4B29C00010D26 /* BulletCollision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletCollision.framework; path = ../../../../../Library/Frameworks/BulletCollision.framework; sourceTree = "<group>"; };
+		638ABB3A18F4B29C00010D26 /* BulletDynamics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletDynamics.framework; path = ../../../../../Library/Frameworks/BulletDynamics.framework; sourceTree = "<group>"; };
+		638ABB3B18F4B29C00010D26 /* LinearMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LinearMath.framework; path = ../../../../../Library/Frameworks/LinearMath.framework; sourceTree = "<group>"; };
+		6399C25F18D78A0600A271C9 /* NezGLSLCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezGLSLCompiler.h; sourceTree = "<group>"; };
+		6399C26018D78A0600A271C9 /* NezGLSLCompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezGLSLCompiler.m; sourceTree = "<group>"; };
+		6399C26118D78A0600A271C9 /* NezGLSLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezGLSLProgram.h; sourceTree = "<group>"; };
+		6399C26218D78A0600A271C9 /* NezGLSLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezGLSLProgram.m; sourceTree = "<group>"; };
+		6399C26518D78DF200A271C9 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shaders; path = Resources/Shaders; sourceTree = "<group>"; };
+		6399C26818D79D3400A271C9 /* NezGLSLProgramParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezGLSLProgramParticleSystem.h; sourceTree = "<group>"; };
+		6399C26918D79D3400A271C9 /* NezGLSLProgramParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezGLSLProgramParticleSystem.m; sourceTree = "<group>"; };
+		639D3F6818DF87C000E4CD42 /* NezClickable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NezClickable.h; sourceTree = "<group>"; };
+		639D3F6918DF881C00E4CD42 /* NezClickableNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezClickableNode.h; sourceTree = "<group>"; };
+		639D3F6A18DF881C00E4CD42 /* NezClickableNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezClickableNode.m; sourceTree = "<group>"; };
+		639D3F6D18DFA58700E4CD42 /* NezXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezXML.h; sourceTree = "<group>"; };
+		639D3F6E18DFA58700E4CD42 /* NezXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezXML.m; sourceTree = "<group>"; };
+		639D3F7018DFA59700E4CD42 /* NezXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezXMLElement.h; sourceTree = "<group>"; };
+		639D3F7118DFA59700E4CD42 /* NezXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezXMLElement.m; sourceTree = "<group>"; };
+		639D3F7318E2364200E4CD42 /* NezAletterationDefinitionBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationDefinitionBubble.h; sourceTree = "<group>"; };
+		639D3F7418E2364200E4CD42 /* NezAletterationDefinitionBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationDefinitionBubble.m; sourceTree = "<group>"; };
+		63A1F06418B1912A00F6A070 /* NezBoxLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezBoxLoader.h; sourceTree = "<group>"; };
+		63A1F06518B1912A00F6A070 /* NezBoxLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezBoxLoader.m; sourceTree = "<group>"; };
+		63ACB36118D4174900088541 /* NezAletterationPlayerNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationPlayerNotifications.h; sourceTree = "<group>"; };
+		63ACB36218D4174900088541 /* NezAletterationPlayerNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationPlayerNotifications.m; sourceTree = "<group>"; };
+		63D3368818E5341D00FEC7F8 /* NezGLSLProgramFog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezGLSLProgramFog.h; sourceTree = "<group>"; };
+		63D3368918E5341D00FEC7F8 /* NezGLSLProgramFog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezGLSLProgramFog.m; sourceTree = "<group>"; };
+		63DF17C418A6D08500DD3805 /* NezNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezNode.h; sourceTree = "<group>"; };
+		63DF17C518A6D08500DD3805 /* NezNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezNode.m; sourceTree = "<group>"; };
+		63DF17C718A6D2EF00DD3805 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		63DF17CB18A6D31F00DD3805 /* NezAletterationBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationBox.h; sourceTree = "<group>"; };
+		63DF17CC18A6D31F00DD3805 /* NezAletterationBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NezAletterationBox.mm; sourceTree = "<group>"; };
+		63DF17EE18A6D31F00DD3805 /* NezAletterationGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGameState.h; sourceTree = "<group>"; };
+		63DF17EF18A6D31F00DD3805 /* NezAletterationGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGameState.m; sourceTree = "<group>"; };
+		63DF17F018A6D31F00DD3805 /* NezAletterationGameStateLineState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGameStateLineState.h; sourceTree = "<group>"; };
+		63DF17F118A6D31F00DD3805 /* NezAletterationGameStateLineState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGameStateLineState.m; sourceTree = "<group>"; };
+		63DF17F218A6D31F00DD3805 /* NezAletterationGameStateLineStateStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGameStateLineStateStack.h; sourceTree = "<group>"; };
+		63DF17F318A6D31F00DD3805 /* NezAletterationGameStateLineStateStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGameStateLineStateStack.m; sourceTree = "<group>"; };
+		63DF17F418A6D31F00DD3805 /* NezAletterationGameStateRetiredWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGameStateRetiredWord.h; sourceTree = "<group>"; };
+		63DF17F518A6D31F00DD3805 /* NezAletterationGameStateRetiredWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGameStateRetiredWord.m; sourceTree = "<group>"; };
+		63DF17F618A6D31F00DD3805 /* NezAletterationGameStateTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGameStateTurn.h; sourceTree = "<group>"; };
+		63DF17F718A6D31F00DD3805 /* NezAletterationGameStateTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGameStateTurn.m; sourceTree = "<group>"; };
+		63DF17FC18A6D31F00DD3805 /* NezAletterationPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationPlayer.h; sourceTree = "<group>"; };
+		63DF17FD18A6D31F00DD3805 /* NezAletterationPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationPlayer.m; sourceTree = "<group>"; };
+		63DF17FE18A6D31F00DD3805 /* NezAletterationPlayerPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationPlayerPrefs.h; sourceTree = "<group>"; };
+		63DF17FF18A6D31F00DD3805 /* NezAletterationPlayerPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationPlayerPrefs.m; sourceTree = "<group>"; };
+		63DF180118A6D31F00DD3805 /* NezAletterationSQLiteDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationSQLiteDictionary.h; sourceTree = "<group>"; };
+		63DF180218A6D31F00DD3805 /* NezAletterationSQLiteDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationSQLiteDictionary.m; sourceTree = "<group>"; };
+		63DF180318A6D31F00DD3805 /* NezSQLite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NezSQLite.c; sourceTree = "<group>"; };
+		63DF180418A6D31F00DD3805 /* NezSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezSQLite.h; sourceTree = "<group>"; };
+		63DF180518A6D31F00DD3805 /* NezSQLiteHighScores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezSQLiteHighScores.h; sourceTree = "<group>"; };
+		63DF180618A6D31F00DD3805 /* NezSQLiteHighScores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezSQLiteHighScores.m; sourceTree = "<group>"; };
+		63DF180818A6D31F00DD3805 /* NezAletterationStoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationStoreKit.h; sourceTree = "<group>"; };
+		63DF180918A6D31F00DD3805 /* NezAletterationStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationStoreKit.m; sourceTree = "<group>"; };
+		63DF180F18A6D31F00DD3805 /* NezGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezGCD.h; sourceTree = "<group>"; };
+		63DF181018A6D31F00DD3805 /* NezGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezGCD.m; sourceTree = "<group>"; };
+		63DF183618A6DA3400DD3805 /* NezStoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezStoreKit.h; sourceTree = "<group>"; };
+		63DF183718A6DA3400DD3805 /* NezStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezStoreKit.m; sourceTree = "<group>"; };
+		63DF183818A6DA3400DD3805 /* NezStoreKitProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezStoreKitProduct.h; sourceTree = "<group>"; };
+		63DF183918A6DA3400DD3805 /* NezStoreKitProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezStoreKitProduct.m; sourceTree = "<group>"; };
+		63DF183C18A6DA4800DD3805 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		63DF183F18A6DA6700DD3805 /* NezRandom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NezRandom.c; sourceTree = "<group>"; };
+		63DF184018A6DA6700DD3805 /* NezRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezRandom.h; sourceTree = "<group>"; };
+		63DF184718A6E8CD00DD3805 /* NezAletterationGameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationGameBoard.h; sourceTree = "<group>"; };
+		63DF184818A6E8CD00DD3805 /* NezAletterationGameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationGameBoard.m; sourceTree = "<group>"; };
+		63DF184A18A6E91D00DD3805 /* NezAletterationGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NezAletterationGeometry.h; sourceTree = "<group>"; };
+		63DF184B18A6EA9400DD3805 /* NezAletterationLetterBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationLetterBlock.h; sourceTree = "<group>"; };
+		63DF184C18A6EA9400DD3805 /* NezAletterationLetterBlock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NezAletterationLetterBlock.mm; sourceTree = "<group>"; };
+		63DF184E18A6ECC300DD3805 /* NezAletterationRetiredWordBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationRetiredWordBoard.h; sourceTree = "<group>"; };
+		63DF184F18A6ECC300DD3805 /* NezAletterationRetiredWordBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationRetiredWordBoard.m; sourceTree = "<group>"; };
+		63DF185118A6EE2600DD3805 /* NezAletterationRetiredWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationRetiredWord.h; sourceTree = "<group>"; };
+		63DF185218A6EE2600DD3805 /* NezAletterationRetiredWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationRetiredWord.m; sourceTree = "<group>"; };
+		63DF185418A6EE6100DD3805 /* NezAletterationWordLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationWordLine.h; sourceTree = "<group>"; };
+		63DF185518A6EE6100DD3805 /* NezAletterationWordLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationWordLine.m; sourceTree = "<group>"; };
+		63DF185718A6F1D600DD3805 /* NezAletterationLetterStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationLetterStack.h; sourceTree = "<group>"; };
+		63DF185818A6F1D600DD3805 /* NezAletterationLetterStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationLetterStack.m; sourceTree = "<group>"; };
+		63E9DEFE18A2E4A70019CA40 /* AletterationX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AletterationX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E9DF0118A2E4A70019CA40 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		63E9DF0418A2E4A70019CA40 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		63E9DF0518A2E4A70019CA40 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		63E9DF0618A2E4A70019CA40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63E9DF0918A2E4A70019CA40 /* AletterationX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AletterationX-Info.plist"; sourceTree = "<group>"; };
+		63E9DF0B18A2E4A70019CA40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63E9DF0D18A2E4A70019CA40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63E9DF0F18A2E4A70019CA40 /* AletterationX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AletterationX-Prefix.pch"; sourceTree = "<group>"; };
+		63E9DF1118A2E4A70019CA40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		63E9DF1718A2E4A70019CA40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		63E9DF1918A2E4A70019CA40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63E9DF1F18A2E4A70019CA40 /* AletterationXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AletterationXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E9DF2018A2E4A70019CA40 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		63E9DF2718A2E4A70019CA40 /* AletterationXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AletterationXTests-Info.plist"; sourceTree = "<group>"; };
+		63E9DF2918A2E4A70019CA40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63E9DF2B18A2E4A70019CA40 /* AletterationXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AletterationXTests.m; sourceTree = "<group>"; };
+		63E9DF3518A2E4D10019CA40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		63E9DF3718A2E4EB0019CA40 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		63E9DF3918A2E4F40019CA40 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		63E9DF3F18A2E7730019CA40 /* NezSimpleObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezSimpleObjLoader.h; sourceTree = "<group>"; };
+		63E9DF4018A2E7730019CA40 /* NezSimpleObjLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezSimpleObjLoader.m; sourceTree = "<group>"; };
+		63E9DF4118A2E7730019CA40 /* NezAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NezAppDelegate.h; path = Classes/NezAppDelegate.h; sourceTree = "<group>"; };
+		63E9DF4218A2E7730019CA40 /* NezAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NezAppDelegate.m; path = Classes/NezAppDelegate.m; sourceTree = "<group>"; };
+		63E9DF4918A2E8C40019CA40 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		63E9DF4C18A2EA910019CA40 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = Resources/Models; sourceTree = "<group>"; };
+		63E9DF4E18A2F4700019CA40 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Textures; path = Resources/Textures; sourceTree = "<group>"; };
+		63EC5A8618E6658C004F8476 /* NezParticleSystemVAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezParticleSystemVAO.h; sourceTree = "<group>"; };
+		63EC5A8718E6658C004F8476 /* NezParticleSystemVAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezParticleSystemVAO.m; sourceTree = "<group>"; };
+		63EC5A8918E666B5004F8476 /* NezVertexParticleVBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezVertexParticleVBO.h; sourceTree = "<group>"; };
+		63EC5A8A18E666B5004F8476 /* NezVertexParticleVBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezVertexParticleVBO.m; sourceTree = "<group>"; };
+		63FC4A6C18DDFCFC007AB5E2 /* NezAletterationDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NezAletterationDefinition.h; sourceTree = "<group>"; };
+		63FC4A6D18DDFCFC007AB5E2 /* NezAletterationDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NezAletterationDefinition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E9DEFB18A2E4A70019CA40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638ABB3C18F4B29C00010D26 /* BulletCollision.framework in Frameworks */,
+				638ABB3D18F4B29C00010D26 /* BulletDynamics.framework in Frameworks */,
+				638ABB3E18F4B29C00010D26 /* LinearMath.framework in Frameworks */,
+				63698C7A18DCFA1900412877 /* libxml2.dylib in Frameworks */,
+				63DF183D18A6DA4800DD3805 /* StoreKit.framework in Frameworks */,
+				63DF17C818A6D2EF00DD3805 /* libsqlite3.dylib in Frameworks */,
+				63E9DF4A18A2E8C40019CA40 /* GLKit.framework in Frameworks */,
+				63E9DF3A18A2E4F40019CA40 /* SceneKit.framework in Frameworks */,
+				63E9DF3818A2E4EB0019CA40 /* OpenGL.framework in Frameworks */,
+				63E9DF3618A2E4D10019CA40 /* QuartzCore.framework in Frameworks */,
+				63E9DF0218A2E4A70019CA40 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E9DF1C18A2E4A70019CA40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E9DF2218A2E4A70019CA40 /* Cocoa.framework in Frameworks */,
+				63E9DF2118A2E4A70019CA40 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		632CE1D318B9B46800A84C8A /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				632CE1D418B9B46800A84C8A /* NezAnimation.h */,
+				632CE1D518B9B46800A84C8A /* NezAnimation.m */,
+				632CE1D718B9B46800A84C8A /* NezAnimationEasingFunction.h */,
+				632CE1D618B9B46800A84C8A /* NezAnimationEasingFunction.c */,
+				632CE1DC18B9B46800A84C8A /* NezAnimator.h */,
+				632CE1DD18B9B46800A84C8A /* NezAnimator.m */,
+			);
+			name = Animation;
+			path = Classes/Animation;
+			sourceTree = "<group>";
+		};
+		6334344218C90AD1004B0E02 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				6334344F18C90AEE004B0E02 /* NezPaths.h */,
+				6334344318C90AD1004B0E02 /* NezPath2d.h */,
+				6334344418C90AD1004B0E02 /* NezPath2d.m */,
+				6334344518C90AD1004B0E02 /* NezPath3d.h */,
+				6334344618C90AD1004B0E02 /* NezPath3d.m */,
+				6334344718C90AD1004B0E02 /* NezPathCubicBezier2d.h */,
+				6334344818C90AD1004B0E02 /* NezPathCubicBezier2d.m */,
+				6334344918C90AD1004B0E02 /* NezPathCubicBezier3d.h */,
+				6334344A18C90AD1004B0E02 /* NezPathCubicBezier3d.m */,
+			);
+			name = Paths;
+			path = Classes/Paths;
+			sourceTree = "<group>";
+		};
+		633737FD18C29537001E584B /* GLKUtil */ = {
+			isa = PBXGroup;
+			children = (
+				633737FE18C29537001E584B /* NezGLKUtil.c */,
+				633737FF18C29537001E584B /* NezGLKUtil.h */,
+			);
+			name = GLKUtil;
+			path = Classes/GLKUtil;
+			sourceTree = "<group>";
+		};
+		633C90D818AAC1C50040AC89 /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				633C90DB18AAC1C50040AC89 /* NezDynamicNode.h */,
+				633C90DC18AAC1C50040AC89 /* NezDynamicNode.mm */,
+				633C90D918AAC1C50040AC89 /* NezAletterationBulletPhysics.h */,
+				633C90DA18AAC1C50040AC89 /* NezAletterationBulletPhysics.mm */,
+			);
+			name = Physics;
+			path = Classes/Physics;
+			sourceTree = "<group>";
+		};
+		6346D82A18A95B1500C392EA /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				6346D82B18A95B1500C392EA /* CustomMaterials */,
+			);
+			name = SceneKit;
+			path = Classes/SceneKit;
+			sourceTree = "<group>";
+		};
+		6346D82B18A95B1500C392EA /* CustomMaterials */ = {
+			isa = PBXGroup;
+			children = (
+				6346D82F18A95CC400C392EA /* NezSCNMaterials.h */,
+				6346D82C18A95B1500C392EA /* NezSurfaceColorMaterial.h */,
+				6346D82D18A95B1500C392EA /* NezSurfaceColorMaterial.m */,
+			);
+			path = CustomMaterials;
+			sourceTree = "<group>";
+		};
+		63570CBC18E61E1E008AE95D /* VertexBufferObject */ = {
+			isa = PBXGroup;
+			children = (
+				63570CBF18E61E1E008AE95D /* NezVertexTypes.h */,
+				63570CBD18E61E1E008AE95D /* NezVertexBufferObject.h */,
+				63570CBE18E61E1E008AE95D /* NezVertexBufferObject.m */,
+				63570CC718E62332008AE95D /* NezVertex2VBO.h */,
+				63570CC818E62332008AE95D /* NezVertex2VBO.m */,
+				63EC5A8918E666B5004F8476 /* NezVertexParticleVBO.h */,
+				63EC5A8A18E666B5004F8476 /* NezVertexParticleVBO.m */,
+				633065ED18E9FC2F00F21FE6 /* NezVboVertexP4T2.h */,
+				633065EE18E9FC2F00F21FE6 /* NezVboVertexP4T2.m */,
+			);
+			path = VertexBufferObject;
+			sourceTree = "<group>";
+		};
+		63570CC318E61E5B008AE95D /* VertexArrayObject */ = {
+			isa = PBXGroup;
+			children = (
+				63570CC418E61E5B008AE95D /* NezVertexArrayObject.h */,
+				63570CC518E61E5B008AE95D /* NezVertexArrayObject.m */,
+				63570CCB18E63A0B008AE95D /* NezFogVAO.h */,
+				63570CCC18E63A0B008AE95D /* NezFogVAO.m */,
+				6374666618E8904B00A9BED5 /* NezFXAAVAO.h */,
+				6374666718E8904B00A9BED5 /* NezFXAAVAO.m */,
+				63EC5A8618E6658C004F8476 /* NezParticleSystemVAO.h */,
+				63EC5A8718E6658C004F8476 /* NezParticleSystemVAO.m */,
+			);
+			path = VertexArrayObject;
+			sourceTree = "<group>";
+		};
+		635B5B0018D0E401006124C2 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				635B5B0118D0E401006124C2 /* Filters */,
+			);
+			name = CoreImage;
+			path = Classes/CoreImage;
+			sourceTree = "<group>";
+		};
+		635B5B0118D0E401006124C2 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				635B5B0218D0E44D006124C2 /* NezCIFilterGlow.h */,
+				635B5B0318D0E44D006124C2 /* NezCIFilterGlow.m */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		6375937518DA2416002E0B40 /* ParticleEmitters */ = {
+			isa = PBXGroup;
+			children = (
+				6375937818DA2416002E0B40 /* NezNodeParticleEmitter.h */,
+				6375937918DA2416002E0B40 /* NezNodeParticleEmitter.m */,
+				6375937618DA2416002E0B40 /* NezNodeFireworksEmitter.h */,
+				6375937718DA2416002E0B40 /* NezNodeFireworksEmitter.m */,
+				6375937C18DAB72F002E0B40 /* NezNodeStarStreamerEmitter.h */,
+				6375937D18DAB72F002E0B40 /* NezNodeStarStreamerEmitter.m */,
+			);
+			path = ParticleEmitters;
+			sourceTree = "<group>";
+		};
+		6399C25E18D78A0600A271C9 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				6399C25F18D78A0600A271C9 /* NezGLSLCompiler.h */,
+				6399C26018D78A0600A271C9 /* NezGLSLCompiler.m */,
+				6399C26118D78A0600A271C9 /* NezGLSLProgram.h */,
+				6399C26218D78A0600A271C9 /* NezGLSLProgram.m */,
+				633065F018EA469400F21FE6 /* NezGBuffer.h */,
+				633065F118EA469400F21FE6 /* NezGBuffer.m */,
+				6399C26718D79D1100A271C9 /* ShaderPrograms */,
+				63570CC318E61E5B008AE95D /* VertexArrayObject */,
+				63570CBC18E61E1E008AE95D /* VertexBufferObject */,
+			);
+			name = OpenGL;
+			path = Classes/OpenGL;
+			sourceTree = "<group>";
+		};
+		6399C26718D79D1100A271C9 /* ShaderPrograms */ = {
+			isa = PBXGroup;
+			children = (
+				63570CCA18E62D33008AE95D /* NezGLSLProgramProtocols.h */,
+				63D3368818E5341D00FEC7F8 /* NezGLSLProgramFog.h */,
+				63D3368918E5341D00FEC7F8 /* NezGLSLProgramFog.m */,
+				6374666318E88FBF00A9BED5 /* NezGLSLProgramFXAA.h */,
+				6374666418E88FBF00A9BED5 /* NezGLSLProgramFXAA.m */,
+				6399C26818D79D3400A271C9 /* NezGLSLProgramParticleSystem.h */,
+				6399C26918D79D3400A271C9 /* NezGLSLProgramParticleSystem.m */,
+			);
+			path = ShaderPrograms;
+			sourceTree = "<group>";
+		};
+		639D3F6C18DFA57900E4CD42 /* NezXML */ = {
+			isa = PBXGroup;
+			children = (
+				639D3F6D18DFA58700E4CD42 /* NezXML.h */,
+				639D3F6E18DFA58700E4CD42 /* NezXML.m */,
+				639D3F7018DFA59700E4CD42 /* NezXMLElement.h */,
+				639D3F7118DFA59700E4CD42 /* NezXMLElement.m */,
+			);
+			name = NezXML;
+			path = Classes/NezXML;
+			sourceTree = "<group>";
+		};
+		63DF17C318A6D08500DD3805 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				639D3F6818DF87C000E4CD42 /* NezClickable.h */,
+				63DF17C418A6D08500DD3805 /* NezNode.h */,
+				63DF17C518A6D08500DD3805 /* NezNode.m */,
+				639D3F6918DF881C00E4CD42 /* NezClickableNode.h */,
+				639D3F6A18DF881C00E4CD42 /* NezClickableNode.m */,
+				6375937518DA2416002E0B40 /* ParticleEmitters */,
+			);
+			name = Geometry;
+			path = Classes/Geometry;
+			sourceTree = "<group>";
+		};
+		63DF17C918A6D31F00DD3805 /* Aletteration */ = {
+			isa = PBXGroup;
+			children = (
+				63DF17CA18A6D31F00DD3805 /* Geometry */,
+				63DF17E918A6D31F00DD3805 /* Graphics */,
+				63DF17EC18A6D31F00DD3805 /* Player */,
+				63DF180018A6D31F00DD3805 /* SQLite */,
+				63DF180718A6D31F00DD3805 /* StoreKit */,
+				63DF180A18A6D31F00DD3805 /* ViewControllers */,
+			);
+			name = Aletteration;
+			path = Classes/Aletteration;
+			sourceTree = "<group>";
+		};
+		63DF17CA18A6D31F00DD3805 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				63DF184A18A6E91D00DD3805 /* NezAletterationGeometry.h */,
+				6350B33818CF758200B446FF /* NezAletterationGameTable.h */,
+				6350B33918CF758200B446FF /* NezAletterationGameTable.m */,
+				6334343318C9000C004B0E02 /* NezAletterationBigBox.h */,
+				6334343418C9000C004B0E02 /* NezAletterationBigBox.m */,
+				63DF17CB18A6D31F00DD3805 /* NezAletterationBox.h */,
+				63DF17CC18A6D31F00DD3805 /* NezAletterationBox.mm */,
+				63DF184718A6E8CD00DD3805 /* NezAletterationGameBoard.h */,
+				63DF184818A6E8CD00DD3805 /* NezAletterationGameBoard.m */,
+				63DF184B18A6EA9400DD3805 /* NezAletterationLetterBlock.h */,
+				63DF184C18A6EA9400DD3805 /* NezAletterationLetterBlock.mm */,
+				63DF185718A6F1D600DD3805 /* NezAletterationLetterStack.h */,
+				63DF185818A6F1D600DD3805 /* NezAletterationLetterStack.m */,
+				63DF184E18A6ECC300DD3805 /* NezAletterationRetiredWordBoard.h */,
+				63DF184F18A6ECC300DD3805 /* NezAletterationRetiredWordBoard.m */,
+				63DF185118A6EE2600DD3805 /* NezAletterationRetiredWord.h */,
+				63DF185218A6EE2600DD3805 /* NezAletterationRetiredWord.m */,
+				63DF185418A6EE6100DD3805 /* NezAletterationWordLine.h */,
+				63DF185518A6EE6100DD3805 /* NezAletterationWordLine.m */,
+				63FC4A6C18DDFCFC007AB5E2 /* NezAletterationDefinition.h */,
+				63FC4A6D18DDFCFC007AB5E2 /* NezAletterationDefinition.m */,
+				639D3F7318E2364200E4CD42 /* NezAletterationDefinitionBubble.h */,
+				639D3F7418E2364200E4CD42 /* NezAletterationDefinitionBubble.m */,
+			);
+			path = Geometry;
+			sourceTree = "<group>";
+		};
+		63DF17E918A6D31F00DD3805 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				634E7D4118A810A6004A665F /* NezAletterationGraphics.h */,
+				634E7D4218A810A6004A665F /* NezAletterationGraphics.m */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		63DF17EC18A6D31F00DD3805 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				63DF17ED18A6D31F00DD3805 /* GameState */,
+				63DF17FC18A6D31F00DD3805 /* NezAletterationPlayer.h */,
+				63DF17FD18A6D31F00DD3805 /* NezAletterationPlayer.m */,
+				635B5AFD18D0D65B006124C2 /* NezAletterationPlayerAI.h */,
+				635B5AFE18D0D65B006124C2 /* NezAletterationPlayerAI.m */,
+				63DF17FE18A6D31F00DD3805 /* NezAletterationPlayerPrefs.h */,
+				63DF17FF18A6D31F00DD3805 /* NezAletterationPlayerPrefs.m */,
+				63ACB36118D4174900088541 /* NezAletterationPlayerNotifications.h */,
+				63ACB36218D4174900088541 /* NezAletterationPlayerNotifications.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		63DF17ED18A6D31F00DD3805 /* GameState */ = {
+			isa = PBXGroup;
+			children = (
+				63DF17EE18A6D31F00DD3805 /* NezAletterationGameState.h */,
+				63DF17EF18A6D31F00DD3805 /* NezAletterationGameState.m */,
+				63DF17F018A6D31F00DD3805 /* NezAletterationGameStateLineState.h */,
+				63DF17F118A6D31F00DD3805 /* NezAletterationGameStateLineState.m */,
+				63DF17F218A6D31F00DD3805 /* NezAletterationGameStateLineStateStack.h */,
+				63DF17F318A6D31F00DD3805 /* NezAletterationGameStateLineStateStack.m */,
+				63DF17F418A6D31F00DD3805 /* NezAletterationGameStateRetiredWord.h */,
+				63DF17F518A6D31F00DD3805 /* NezAletterationGameStateRetiredWord.m */,
+				63DF17F618A6D31F00DD3805 /* NezAletterationGameStateTurn.h */,
+				63DF17F718A6D31F00DD3805 /* NezAletterationGameStateTurn.m */,
+			);
+			path = GameState;
+			sourceTree = "<group>";
+		};
+		63DF180018A6D31F00DD3805 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				63DF180118A6D31F00DD3805 /* NezAletterationSQLiteDictionary.h */,
+				63DF180218A6D31F00DD3805 /* NezAletterationSQLiteDictionary.m */,
+				63DF180318A6D31F00DD3805 /* NezSQLite.c */,
+				63DF180418A6D31F00DD3805 /* NezSQLite.h */,
+				63DF180518A6D31F00DD3805 /* NezSQLiteHighScores.h */,
+				63DF180618A6D31F00DD3805 /* NezSQLiteHighScores.m */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		63DF180718A6D31F00DD3805 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				63DF180818A6D31F00DD3805 /* NezAletterationStoreKit.h */,
+				63DF180918A6D31F00DD3805 /* NezAletterationStoreKit.m */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		63DF180A18A6D31F00DD3805 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6346D84D18A9F1B600C392EA /* NezAletterationSCNView.h */,
+				6346D84E18A9F1B600C392EA /* NezAletterationSCNView.m */,
+				6386B81418AC07B000E262F7 /* NezAletterationInputControllers.h */,
+				6386B81518AC089000E262F7 /* NezAletterationInputController.h */,
+				6386B81618AC089000E262F7 /* NezAletterationInputController.m */,
+				634E7D4518A82323004A665F /* NezAletterationGameController.h */,
+				634E7D4618A82323004A665F /* NezAletterationGameController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63DF180E18A6D31F00DD3805 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				63DF180F18A6D31F00DD3805 /* NezGCD.h */,
+				63DF181018A6D31F00DD3805 /* NezGCD.m */,
+			);
+			name = GCD;
+			path = Classes/GCD;
+			sourceTree = "<group>";
+		};
+		63DF183518A6DA3400DD3805 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				63DF183618A6DA3400DD3805 /* NezStoreKit.h */,
+				63DF183718A6DA3400DD3805 /* NezStoreKit.m */,
+				63DF183818A6DA3400DD3805 /* NezStoreKitProduct.h */,
+				63DF183918A6DA3400DD3805 /* NezStoreKitProduct.m */,
+			);
+			name = StoreKit;
+			path = Classes/StoreKit;
+			sourceTree = "<group>";
+		};
+		63DF183E18A6DA6700DD3805 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				63DF184018A6DA6700DD3805 /* NezRandom.h */,
+				63DF183F18A6DA6700DD3805 /* NezRandom.c */,
+			);
+			name = Random;
+			path = Classes/Random;
+			sourceTree = "<group>";
+		};
+		63E9DEF518A2E4A70019CA40 = {
+			isa = PBXGroup;
+			children = (
+				63E9DF0718A2E4A70019CA40 /* AletterationX */,
+				63E9DF2518A2E4A70019CA40 /* AletterationXTests */,
+				63E9DF0018A2E4A70019CA40 /* Frameworks */,
+				63E9DEFF18A2E4A70019CA40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63E9DEFF18A2E4A70019CA40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E9DEFE18A2E4A70019CA40 /* AletterationX.app */,
+				63E9DF1F18A2E4A70019CA40 /* AletterationXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E9DF0018A2E4A70019CA40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				638ABB3918F4B29C00010D26 /* BulletCollision.framework */,
+				638ABB3A18F4B29C00010D26 /* BulletDynamics.framework */,
+				638ABB3B18F4B29C00010D26 /* LinearMath.framework */,
+				63698C7918DCFA1900412877 /* libxml2.dylib */,
+				63DF17C718A6D2EF00DD3805 /* libsqlite3.dylib */,
+				63DF183C18A6DA4800DD3805 /* StoreKit.framework */,
+				63E9DF4918A2E8C40019CA40 /* GLKit.framework */,
+				63E9DF3918A2E4F40019CA40 /* SceneKit.framework */,
+				63E9DF3718A2E4EB0019CA40 /* OpenGL.framework */,
+				63E9DF3518A2E4D10019CA40 /* QuartzCore.framework */,
+				63E9DF0118A2E4A70019CA40 /* Cocoa.framework */,
+				63E9DF2018A2E4A70019CA40 /* XCTest.framework */,
+				63E9DF0318A2E4A70019CA40 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63E9DF0318A2E4A70019CA40 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E9DF0418A2E4A70019CA40 /* AppKit.framework */,
+				63E9DF0518A2E4A70019CA40 /* CoreData.framework */,
+				63E9DF0618A2E4A70019CA40 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		63E9DF0718A2E4A70019CA40 /* AletterationX */ = {
+			isa = PBXGroup;
+			children = (
+				63E9DF3B18A2E7500019CA40 /* Classes */,
+				63E9DF4B18A2EA650019CA40 /* Resources */,
+				63E9DF1618A2E4A70019CA40 /* MainMenu.xib */,
+				63E9DF1918A2E4A70019CA40 /* Images.xcassets */,
+				63E9DF0818A2E4A70019CA40 /* Supporting Files */,
+			);
+			path = AletterationX;
+			sourceTree = "<group>";
+		};
+		63E9DF0818A2E4A70019CA40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63E9DF0918A2E4A70019CA40 /* AletterationX-Info.plist */,
+				63E9DF0A18A2E4A70019CA40 /* InfoPlist.strings */,
+				63E9DF0D18A2E4A70019CA40 /* main.m */,
+				63E9DF0F18A2E4A70019CA40 /* AletterationX-Prefix.pch */,
+				63E9DF1018A2E4A70019CA40 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63E9DF2518A2E4A70019CA40 /* AletterationXTests */ = {
+			isa = PBXGroup;
+			children = (
+				63E9DF2B18A2E4A70019CA40 /* AletterationXTests.m */,
+				63E9DF2618A2E4A70019CA40 /* Supporting Files */,
+			);
+			path = AletterationXTests;
+			sourceTree = "<group>";
+		};
+		63E9DF2618A2E4A70019CA40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63E9DF2718A2E4A70019CA40 /* AletterationXTests-Info.plist */,
+				63E9DF2818A2E4A70019CA40 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63E9DF3B18A2E7500019CA40 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				63DF17C918A6D31F00DD3805 /* Aletteration */,
+				632CE1D318B9B46800A84C8A /* Animation */,
+				635B5B0018D0E401006124C2 /* CoreImage */,
+				63DF180E18A6D31F00DD3805 /* GCD */,
+				6346D82A18A95B1500C392EA /* SceneKit */,
+				63DF17C318A6D08500DD3805 /* Geometry */,
+				6334344218C90AD1004B0E02 /* Paths */,
+				633737FD18C29537001E584B /* GLKUtil */,
+				63E9DF3C18A2E7730019CA40 /* ModelLoaders */,
+				639D3F6C18DFA57900E4CD42 /* NezXML */,
+				6399C25E18D78A0600A271C9 /* OpenGL */,
+				633C90D818AAC1C50040AC89 /* Physics */,
+				63DF183E18A6DA6700DD3805 /* Random */,
+				63DF183518A6DA3400DD3805 /* StoreKit */,
+				63E9DF4118A2E7730019CA40 /* NezAppDelegate.h */,
+				63E9DF4218A2E7730019CA40 /* NezAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		63E9DF3C18A2E7730019CA40 /* ModelLoaders */ = {
+			isa = PBXGroup;
+			children = (
+				6346D83A18A98DAD00C392EA /* NezModelVertexArray.h */,
+				6346D83B18A98DAD00C392EA /* NezModelVertexArray.m */,
+				63E9DF3F18A2E7730019CA40 /* NezSimpleObjLoader.h */,
+				63E9DF4018A2E7730019CA40 /* NezSimpleObjLoader.m */,
+				63A1F06418B1912A00F6A070 /* NezBoxLoader.h */,
+				63A1F06518B1912A00F6A070 /* NezBoxLoader.m */,
+			);
+			name = ModelLoaders;
+			path = Classes/ModelLoaders;
+			sourceTree = "<group>";
+		};
+		63E9DF4B18A2EA650019CA40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				634875BB18D3B3AB00B27183 /* Databases */,
+				63E9DF4C18A2EA910019CA40 /* Models */,
+				63E9DF4E18A2F4700019CA40 /* Textures */,
+				6399C26518D78DF200A271C9 /* Shaders */,
+				6386705818A574F800D52133 /* ShaderModifiers */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63E9DEFD18A2E4A70019CA40 /* AletterationX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E9DF2F18A2E4A70019CA40 /* Build configuration list for PBXNativeTarget "AletterationX" */;
+			buildPhases = (
+				63E9DEFA18A2E4A70019CA40 /* Sources */,
+				63E9DEFB18A2E4A70019CA40 /* Frameworks */,
+				63E9DEFC18A2E4A70019CA40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AletterationX;
+			productName = AletterationX;
+			productReference = 63E9DEFE18A2E4A70019CA40 /* AletterationX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63E9DF1E18A2E4A70019CA40 /* AletterationXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E9DF3218A2E4A70019CA40 /* Build configuration list for PBXNativeTarget "AletterationXTests" */;
+			buildPhases = (
+				63E9DF1B18A2E4A70019CA40 /* Sources */,
+				63E9DF1C18A2E4A70019CA40 /* Frameworks */,
+				63E9DF1D18A2E4A70019CA40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E9DF2418A2E4A70019CA40 /* PBXTargetDependency */,
+			);
+			name = AletterationXTests;
+			productName = AletterationXTests;
+			productReference = 63E9DF1F18A2E4A70019CA40 /* AletterationXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E9DEF618A2E4A70019CA40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Nez;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "David Nesbitt";
+				TargetAttributes = {
+					63E9DF1E18A2E4A70019CA40 = {
+						TestTargetID = 63E9DEFD18A2E4A70019CA40;
+					};
+				};
+			};
+			buildConfigurationList = 63E9DEF918A2E4A70019CA40 /* Build configuration list for PBXProject "AletterationX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63E9DEF518A2E4A70019CA40;
+			productRefGroup = 63E9DEFF18A2E4A70019CA40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E9DEFD18A2E4A70019CA40 /* AletterationX */,
+				63E9DF1E18A2E4A70019CA40 /* AletterationXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E9DEFC18A2E4A70019CA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6399C26618D78DF200A271C9 /* Shaders in Resources */,
+				6386705918A574F800D52133 /* ShaderModifiers in Resources */,
+				634875BC18D3B3AB00B27183 /* Databases in Resources */,
+				63E9DF4F18A2F4700019CA40 /* Textures in Resources */,
+				63E9DF4D18A2EA910019CA40 /* Models in Resources */,
+				63E9DF0C18A2E4A70019CA40 /* InfoPlist.strings in Resources */,
+				63E9DF1A18A2E4A70019CA40 /* Images.xcassets in Resources */,
+				63E9DF1218A2E4A70019CA40 /* Credits.rtf in Resources */,
+				63E9DF1818A2E4A70019CA40 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E9DF1D18A2E4A70019CA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E9DF2A18A2E4A70019CA40 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E9DEFA18A2E4A70019CA40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633C90DE18AAC1C50040AC89 /* NezDynamicNode.mm in Sources */,
+				63DF182C18A6D31F00DD3805 /* NezSQLiteHighScores.m in Sources */,
+				63DF182818A6D31F00DD3805 /* NezAletterationPlayer.m in Sources */,
+				63DF182D18A6D31F00DD3805 /* NezAletterationStoreKit.m in Sources */,
+				635B5AFF18D0D65B006124C2 /* NezAletterationPlayerAI.m in Sources */,
+				633065F218EA469400F21FE6 /* NezGBuffer.m in Sources */,
+				6337380018C29537001E584B /* NezGLKUtil.c in Sources */,
+				63EC5A8B18E666B5004F8476 /* NezVertexParticleVBO.m in Sources */,
+				6350B33A18CF758200B446FF /* NezAletterationGameTable.m in Sources */,
+				63E9DF4518A2E7730019CA40 /* NezAppDelegate.m in Sources */,
+				63E9DF0E18A2E4A70019CA40 /* main.m in Sources */,
+				63DF185618A6EE6100DD3805 /* NezAletterationWordLine.m in Sources */,
+				634E7D4718A82323004A665F /* NezAletterationGameController.m in Sources */,
+				63DF184118A6DA6700DD3805 /* NezRandom.c in Sources */,
+				634E7D4318A810A6004A665F /* NezAletterationGraphics.m in Sources */,
+				6386B81718AC089000E262F7 /* NezAletterationInputController.m in Sources */,
+				63570CCD18E63A0B008AE95D /* NezFogVAO.m in Sources */,
+				63DF185318A6EE2600DD3805 /* NezAletterationRetiredWord.m in Sources */,
+				6346D83C18A98DAD00C392EA /* NezModelVertexArray.m in Sources */,
+				639D3F6B18DF881C00E4CD42 /* NezClickableNode.m in Sources */,
+				63EC5A8818E6658C004F8476 /* NezParticleSystemVAO.m in Sources */,
+				63DF182418A6D31F00DD3805 /* NezAletterationGameStateRetiredWord.m in Sources */,
+				6399C26318D78A0600A271C9 /* NezGLSLCompiler.m in Sources */,
+				6374666518E88FBF00A9BED5 /* NezGLSLProgramFXAA.m in Sources */,
+				63DF183B18A6DA3400DD3805 /* NezStoreKitProduct.m in Sources */,
+				63DF185018A6ECC300DD3805 /* NezAletterationRetiredWordBoard.m in Sources */,
+				6375937A18DA2416002E0B40 /* NezNodeFireworksEmitter.m in Sources */,
+				63FC4A6E18DDFCFC007AB5E2 /* NezAletterationDefinition.m in Sources */,
+				635B5B0418D0E44D006124C2 /* NezCIFilterGlow.m in Sources */,
+				6334343518C9000C004B0E02 /* NezAletterationBigBox.m in Sources */,
+				63DF183A18A6DA3400DD3805 /* NezStoreKit.m in Sources */,
+				632CE1DF18B9B46800A84C8A /* NezAnimationEasingFunction.c in Sources */,
+				63A1F06618B1912A00F6A070 /* NezBoxLoader.m in Sources */,
+				63D3368A18E5341D00FEC7F8 /* NezGLSLProgramFog.m in Sources */,
+				6374666818E8904B00A9BED5 /* NezFXAAVAO.m in Sources */,
+				63E9DF4418A2E7730019CA40 /* NezSimpleObjLoader.m in Sources */,
+				639D3F7518E2364200E4CD42 /* NezAletterationDefinitionBubble.m in Sources */,
+				6399C26A18D79D3400A271C9 /* NezGLSLProgramParticleSystem.m in Sources */,
+				6334344C18C90AD1004B0E02 /* NezPath3d.m in Sources */,
+				63DF182118A6D31F00DD3805 /* NezAletterationGameState.m in Sources */,
+				6346D84F18A9F1B600C392EA /* NezAletterationSCNView.m in Sources */,
+				639D3F6F18DFA58700E4CD42 /* NezXML.m in Sources */,
+				63DF182918A6D31F00DD3805 /* NezAletterationPlayerPrefs.m in Sources */,
+				63DF181118A6D31F00DD3805 /* NezAletterationBox.mm in Sources */,
+				6375937B18DA2416002E0B40 /* NezNodeParticleEmitter.m in Sources */,
+				6334344B18C90AD1004B0E02 /* NezPath2d.m in Sources */,
+				63DF17C618A6D08500DD3805 /* NezNode.m in Sources */,
+				6334344E18C90AD1004B0E02 /* NezPathCubicBezier3d.m in Sources */,
+				63570CC918E62332008AE95D /* NezVertex2VBO.m in Sources */,
+				6399C26418D78A0600A271C9 /* NezGLSLProgram.m in Sources */,
+				63DF185918A6F1D600DD3805 /* NezAletterationLetterStack.m in Sources */,
+				6375937E18DAB72F002E0B40 /* NezNodeStarStreamerEmitter.m in Sources */,
+				63DF182218A6D31F00DD3805 /* NezAletterationGameStateLineState.m in Sources */,
+				63DF182518A6D31F00DD3805 /* NezAletterationGameStateTurn.m in Sources */,
+				6334344D18C90AD1004B0E02 /* NezPathCubicBezier2d.m in Sources */,
+				633065EF18E9FC2F00F21FE6 /* NezVboVertexP4T2.m in Sources */,
+				63570CC618E61E5B008AE95D /* NezVertexArrayObject.m in Sources */,
+				6346D82E18A95B1500C392EA /* NezSurfaceColorMaterial.m in Sources */,
+				632CE1DE18B9B46800A84C8A /* NezAnimation.m in Sources */,
+				63DF182B18A6D31F00DD3805 /* NezSQLite.c in Sources */,
+				63DF184918A6E8CD00DD3805 /* NezAletterationGameBoard.m in Sources */,
+				63DF184D18A6EA9400DD3805 /* NezAletterationLetterBlock.mm in Sources */,
+				63DF182318A6D31F00DD3805 /* NezAletterationGameStateLineStateStack.m in Sources */,
+				633C90DD18AAC1C50040AC89 /* NezAletterationBulletPhysics.mm in Sources */,
+				639D3F7218DFA59700E4CD42 /* NezXMLElement.m in Sources */,
+				63DF182F18A6D31F00DD3805 /* NezGCD.m in Sources */,
+				63ACB36318D4174900088541 /* NezAletterationPlayerNotifications.m in Sources */,
+				63DF182A18A6D31F00DD3805 /* NezAletterationSQLiteDictionary.m in Sources */,
+				632CE1E218B9B46800A84C8A /* NezAnimator.m in Sources */,
+				63570CC218E61E1E008AE95D /* NezVertexBufferObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E9DF1B18A2E4A70019CA40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E9DF2C18A2E4A70019CA40 /* AletterationXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63E9DF2418A2E4A70019CA40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E9DEFD18A2E4A70019CA40 /* AletterationX */;
+			targetProxy = 63E9DF2318A2E4A70019CA40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63E9DF0A18A2E4A70019CA40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E9DF0B18A2E4A70019CA40 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63E9DF1018A2E4A70019CA40 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E9DF1118A2E4A70019CA40 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		63E9DF1618A2E4A70019CA40 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E9DF1718A2E4A70019CA40 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		63E9DF2818A2E4A70019CA40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E9DF2918A2E4A70019CA40 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63E9DF2D18A2E4A70019CA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		63E9DF2E18A2E4A70019CA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		63E9DF3018A2E4A70019CA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)/bullet-2.82-r2704/bullet-build/src/LinearMath/Debug",
+					"$(PROJECT_DIR)/bullet-2.82-r2704/bullet-build/src/BulletCollision/Debug",
+					"$(PROJECT_DIR)/bullet-2.82-r2704/bullet-build/src/BulletDynamics/Debug",
+					"$(PROJECT_DIR)/bullet-2.82-r2704/xcode-build/build/Debug",
+					"$(PROJECT_DIR)/BulletFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AletterationX/AletterationX-Prefix.pch";
+				INFOPLIST_FILE = "AletterationX/AletterationX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63E9DF3118A2E4A70019CA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)/bullet-2.82-r2704/bullet-build/src/LinearMath/Debug",
+					"$(PROJECT_DIR)/bullet-2.82-r2704/bullet-build/src/BulletCollision/Debug",
+					"$(PROJECT_DIR)/bullet-2.82-r2704/bullet-build/src/BulletDynamics/Debug",
+					"$(PROJECT_DIR)/bullet-2.82-r2704/xcode-build/build/Debug",
+					"$(PROJECT_DIR)/BulletFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AletterationX/AletterationX-Prefix.pch";
+				INFOPLIST_FILE = "AletterationX/AletterationX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		63E9DF3318A2E4A70019CA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AletterationX.app/Contents/MacOS/AletterationX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AletterationX/AletterationX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AletterationXTests/AletterationXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		63E9DF3418A2E4A70019CA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AletterationX.app/Contents/MacOS/AletterationX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AletterationX/AletterationX-Prefix.pch";
+				INFOPLIST_FILE = "AletterationXTests/AletterationXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E9DEF918A2E4A70019CA40 /* Build configuration list for PBXProject "AletterationX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E9DF2D18A2E4A70019CA40 /* Debug */,
+				63E9DF2E18A2E4A70019CA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E9DF2F18A2E4A70019CA40 /* Build configuration list for PBXNativeTarget "AletterationX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E9DF3018A2E4A70019CA40 /* Debug */,
+				63E9DF3118A2E4A70019CA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E9DF3218A2E4A70019CA40 /* Build configuration list for PBXNativeTarget "AletterationXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E9DF3318A2E4A70019CA40 /* Debug */,
+				63E9DF3418A2E4A70019CA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63E9DEF618A2E4A70019CA40 /* Project object */;
+}

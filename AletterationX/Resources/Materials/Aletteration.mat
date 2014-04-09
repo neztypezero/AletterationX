@@ -1,0 +1,39 @@
+LetterBlock {
+	diffuse:[1.0f, 1.0f, 1.0f, 1.0f],
+	ambient:[0.5, 0.5, 0.5, 1.0],
+	specular:[0.75, 0.75, 0.75, 0.75],
+	emissive:[0.0, 0.0, 0.0, 1.0],
+	shininess:25.0
+}
+
+SmallBoxLid {
+	diffuse:[1.0f, 1.0f, 1.0f, 1.0f],
+	ambient:[0.5, 0.5, 0.5, 1.0],
+	specular:[0.75, 0.75, 0.75, 0.75],
+	emissive:[0.0, 0.0, 0.0, 1.0],
+	shininess:25.0
+}
+
+SmallBox {
+	diffuse:[1.0f, 1.0f, 1.0f, 1.0f],
+	ambient:[0.5, 0.5, 0.5, 1.0],
+	specular:[0.75, 0.75, 0.75, 0.75],
+	emissive:[0.0, 0.0, 0.0, 1.0],
+	shininess:25.0
+}
+
+BigBoxLid {
+	diffuse:[1.0f, 1.0f, 1.0f, 1.0f],
+	ambient:[0.5, 0.5, 0.5, 1.0],
+	specular:[0.75, 0.75, 0.75, 0.75],
+	emissive:[0.0, 0.0, 0.0, 1.0],
+	shininess:25.0
+}
+
+BigBox {
+	diffuse:[1.0f, 1.0f, 1.0f, 1.0f],
+	ambient:[0.5, 0.5, 0.5, 1.0],
+	specular:[0.75, 0.75, 0.75, 0.75],
+	emissive:[0.0, 0.0, 0.0, 1.0],
+	shininess:25.0
+}
